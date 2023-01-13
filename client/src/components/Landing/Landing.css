@@ -1,0 +1,59 @@
+.lan {
+  background-image: url('../../media/img2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing {
+  background-color: rgba(248, 193, 193, 0.5);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  animation: 1s ease-in-out 0s normal none infinite running lan;
+}
+
+@keyframes lan {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.landing__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(104, 102, 102);
+  margin-bottom: 1rem;
+}
+
+.landing__button {
+  background-color: rgb(121, 114, 114);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.landing__button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
